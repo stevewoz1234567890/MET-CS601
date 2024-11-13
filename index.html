@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Form</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+    <h2>My First Form</h2>
+    <form id="formItems">
+        <label for="firstName">First Name:*</label>
+        <input type="text" id="firstName" name="firstName"><br>
+        <span class="error" id="firstNameError"></span><br><br>
+
+        <label for="lastName">Last Name:*</label>
+        <input type="text" id="lastName" name="lastName"><br>
+        <span class="error" id="lastNameError"></span><br><br>
+
+        <label for="email" class="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <span class="error" id="emailError"></span><br><br>
+
+        <label for="package">Package:*</label>
+        <input type="radio" id="bronze" name="package" value="Bronze"> Bronze
+        <input type="radio" id="silver" name="package" value="Silver"> Silver
+        <input type="radio" id="gold" name="package" value="Gold"> Gold
+        <input type="radio" id="platinum" name="package" value="Platinum"> Platinum<br>
+        <span class="error" id="packageError"></span><br><br>
+
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            Confirm your subscription to newsletter.*
+        </label>
+        <span class="error" id="subscribeError"></span><br><br>
+
+        <button id="btnSubmit" class="btnSub" type="submit">Submit</button>
+    </form>
+
+    <p id="summaryItem" class="summary"></p>
+</body>
+
+</html>
