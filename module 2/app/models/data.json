@@ -1,0 +1,17 @@
+{
+    "fruits": [
+      { "id": 1, "name": "Apple", "category": "fruit" },
+      { "id": 2, "name": "Banana", "category": "fruit" },
+      { "id": 3, "name": "Cherry", "category": "fruit" },
+      { "id": 4, "name": "Date", "category": "fruit" },
+      { "id": 5, "name": "Elderberry", "category": "fruit" }
+    ],
+    "vegetables": [
+      { "id": 1, "name": "Asparagus", "category": "vegetable" },
+      { "id": 2, "name": "Broccoli", "category": "vegetable" },
+      { "id": 3, "name": "Carrot", "category": "vegetable" },
+      { "id": 4, "name": "Lettuce", "category": "vegetable" },
+      { "id": 5, "name": "Peas", "category": "vegetable" }
+    ]
+  }
+  

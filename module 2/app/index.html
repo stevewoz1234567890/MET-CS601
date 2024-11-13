@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Application</title>
+    <!-- Corrected file paths for CSS and JS -->
+    <link rel="stylesheet" href="/css/shapes.css">
+</head>
+<body>
+    <h1>Drag and Drop Fruits and Vegetables</h1>
+    
+    <div class="container">
+        <div id="fruits" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Fruits</h2>
+            <p>Drag and drop your fruits here!</p>
+        </div>
+        
+        <div id="vegetables" class="drop-zone" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Vegetables</h2>
+            <p>Drag and drop your vegetables here!</p>
+        </div>
+    </div>
+    
+    <h3>Items List</h3>
+    <div id="itemListContainer">
+        <h4>Fruits</h4>
+        <ul id="fruitList"></ul>
+        <h4>Vegetables</h4>
+        <ul id="vegetableList"></ul>
+    </div>
+
+    <!-- Corrected file path for script.js -->
+    <script src="/js/main.js"></script>
+</body>
+</html>

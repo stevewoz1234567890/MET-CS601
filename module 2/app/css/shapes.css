@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.drop-zone {
+    width: 45%;
+    min-height: 150px;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light background for visibility */
+}
+
+.drop-zone:hover {
+    border-color: #000;
+    background-color: #e8f0fe; /* Light blue background on hover */
+}
+
+.drop-zone h2 {
+    margin: 0; /* Remove margin for h2 to maintain spacing */
+}
+
+.drop-zone.over {
+    background-color: #e0f7fa; /* Light cyan for active drop zone */
+}
+
+.draggable {
+    padding: 10px;
+    margin: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* New CSS rule to handle long text truncation */
+#fruitList li, #vegetableList li {
+    max-width: 150px; /* Set a max width for each list item */
+    white-space: nowrap; /* Prevent text from wrapping onto a new line */
+    overflow: hidden; /* Hide the overflow text */
+    text-overflow: ellipsis; /* Add ellipsis ("...") when text is too long */
+    padding: 5px;
+    margin: 5px;
+}
+
+#itemListContainer {
+    margin-top: 20px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
