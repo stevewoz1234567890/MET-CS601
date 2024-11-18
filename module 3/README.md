@@ -26,9 +26,11 @@ The project consists of two main files:
 ### 3. Pseudo-classes and Pseudo-elements
    - **Pseudo-classes**:
      - `:hover` is used on navigation links and project items to add interactivity when hovered.
+     - `:focus` is used on navigation links to add interactivity when focused.
      - `:nth-child(odd)` is applied to alternate the background color of project items for better visual separation.
    - **Pseudo-elements**:
      - `::before` is used on each project item to add a decorative star symbol (`⭐`) to the top-left corner, without altering the HTML structure.
+     - `::after` is used on each project item to add a decorative star symbol (`★`) to the bottom-right corner, without altering the HTML structure.
 
 ### 4. Combinators and Advanced Selectors
    - **Combinators**:
