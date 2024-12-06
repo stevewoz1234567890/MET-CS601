@@ -1,0 +1,98 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Make sure both body and html take up 100% height */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7; /* Light background color */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes full height */
+}
+
+.header {
+  background: linear-gradient(135deg, #2E7D32, #388E3C); /* Gradient green for header */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.header .logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 20px; /* Adjust margin for more space */
+}
+
+.header h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #2c3e50; /* Dark blue for "Inventory" */
+  font-size: 32px;
+  font-weight: 600;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.inventory-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.inventory-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.inventory-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  background-color: #d1e7dd; /* Soft green background on hover */
+  color: #155724; /* Dark green text on hover */
+}
+
+.inventory-item h3 {
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+.inventory-item p {
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #212121;  /* Dark footer */
+  color: white;
+  padding: 20px;
+  margin-top: auto;  /* Push footer to the bottom */
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: #76c7c0;  /* Soft teal color for links */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
