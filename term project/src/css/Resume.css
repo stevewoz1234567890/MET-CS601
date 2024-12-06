@@ -1,0 +1,119 @@
+/* Main Container */
+.resume-container {
+  padding: 2rem;
+  background: #f8f9fa;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.resume-header {
+  margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+  font-size: 2.8rem;
+  color: #0056b3;
+}
+
+.resume-header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.resume-header a {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.resume-header a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.resume-section {
+  margin-bottom: 2.5rem;
+}
+
+.resume-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Resume Cards */
+.resume-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.resume-card h3 {
+  font-size: 1.5rem;
+  color: #0056b3;
+  margin-bottom: 0.5rem;
+}
+
+.resume-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.resume-card ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.resume-card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.skills-list li {
+  background: #0056b3;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .resume-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .resume-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .resume-card p, .resume-card ul li {
+    font-size: 0.9rem;
+  }
+
+  .skills-list li {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

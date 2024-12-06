@@ -1,0 +1,77 @@
+/* Main Container */
+.projects-container {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.projects-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.projects-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Buttons Container */
+.projects-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Buttons */
+.projects-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.projects-buttons button:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+.projects-buttons button span {
+  font-size: 1rem;
+}
+
+.projects-buttons button svg {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container h1 {
+    font-size: 2rem;
+  }
+
+  .projects-container p {
+    font-size: 1rem;
+  }
+
+  .projects-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .projects-buttons button svg {
+    font-size: 1rem;
+  }
+}

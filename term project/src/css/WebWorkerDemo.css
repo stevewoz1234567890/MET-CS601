@@ -1,0 +1,100 @@
+/* Main Container */
+.worker-demo-container {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.worker-demo-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.worker-demo-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Tools Section */
+.worker-tools {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.worker-tools input {
+  width: 150px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.worker-tools button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.worker-tools button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.worker-tools button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Results Section */
+.worker-results {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.worker-results h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.primes-output {
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .worker-demo-container h1 {
+    font-size: 2rem;
+  }
+
+  .worker-demo-container p {
+    font-size: 1rem;
+  }
+
+  .worker-tools input {
+    width: 120px;
+    font-size: 0.9rem;
+  }
+
+  .worker-tools button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

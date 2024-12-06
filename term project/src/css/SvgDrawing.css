@@ -1,0 +1,81 @@
+/* SVG Drawing Container */
+.svg-drawing-container {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.svg-drawing-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.svg-drawing-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Tools Section */
+.svg-tools {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.svg-tools input {
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.svg-tools button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.svg-tools button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.svg-tools button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* SVG Canvas */
+.svg-canvas {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .svg-drawing-container h1 {
+    font-size: 2rem;
+  }
+
+  .svg-drawing-container p {
+    font-size: 1rem;
+  }
+
+  .svg-tools button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
