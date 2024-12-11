@@ -1,0 +1,59 @@
+[
+  {
+    "SKU": "001",
+    "name": "Apples",
+    "qty": 30,
+    "price": 1.75,
+    "description": "Crisp and sweet apples, perfect for snacking or baking.",
+    "image": "/images/apples.webp"
+  },
+  {
+    "SKU": "002",
+    "name": "Oranges",
+    "qty": 20,
+    "price": 1.25,
+    "description": "Juicy and tangy oranges, packed with Vitamin C.",
+    "image": "/images/oranges.webp"
+  },
+  {
+    "SKU": "003",
+    "name": "Bananas",
+    "qty": 25,
+    "price": 0.98,
+    "description": "Ripe bananas, ideal for smoothies or a quick snack.",
+    "image": "/images/bananas.webp"
+  },
+  {
+    "SKU": "004",
+    "name": "Tomatoes",
+    "qty": 15,
+    "price": 1.15,
+    "description": "Fresh, juicy tomatoes, perfect for salads and sauces.",
+    "image": "/images/tomatoes.webp"
+  },
+  {
+    "SKU": "005",
+    "name": "Lettuce",
+    "qty": 10,
+    "price": 2.50,
+    "description": "Crisp green lettuce, ideal for healthy salads and wraps.",
+    "image": "/images/lettuce.webp"
+  },
+  {
+    "SKU": "006",
+    "name": "Carrots",
+    "qty": 40,
+    "price": 0.85,
+    "description": "Sweet and crunchy carrots, perfect for snacking or adding to meals.",
+    "image": "/images/carrots.webp"
+  },
+  {
+    "SKU": "007",
+    "name": "Strawberries",
+    "qty": 18,
+    "price": 3.00,
+    "description": "Fresh and juicy strawberries, great for desserts or smoothies.",
+    "image": "/images/strawberries.webp"
+  }
+  
+]

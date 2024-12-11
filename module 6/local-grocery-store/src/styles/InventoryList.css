@@ -1,0 +1,49 @@
+.inventory-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.inventory-item {
+  background-color: #dfe2fa5a;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  /* Smooth transitions */
+}
+
+.inventory-item:hover {
+  transform: translateY(-5px);
+  /* Lift effect on hover */
+  background-color: #ffffff94;
+  /* Soft green background on hover */
+  color: #155724;
+  /* Dark green text on hover */
+}
+
+.inventory-item h3 {
+  color: #2c3e50;
+  font-size: 20px;
+}
+
+.inventory-item p {
+  font-size: 16px;
+}
+
+.inventory-card {
+  text-decoration: none; /* Remove underline */
+}
+
+.inventory-card:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.inventory-item p {
+  font-size: 16px; /* Adjust as needed */
+  margin: 5px 0;
+}

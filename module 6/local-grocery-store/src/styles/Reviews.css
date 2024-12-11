@@ -1,0 +1,42 @@
+.reviews {
+    margin-top: 20px;
+    text-align: center; /* Center text horizontally */
+  }
+  
+  .review {
+    background: #ffffff; /* Use a clean white background for better contrast */
+    border: 1px solid #ccc; /* Slightly lighter border for a softer look */
+    border-radius: 8px; /* Slightly more rounded corners */
+    padding: 20px; /* Increased padding for better spacing */
+    margin: 15px auto; /* Center the review boxes with auto margins */
+    max-width: 600px; /* Limit the width for readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
+  .review p {
+    margin: 10px 0; /* Add more spacing between paragraphs */
+    font-size: 1.1em; /* Slightly larger text for better readability */
+    line-height: 1.6; /* Improved line spacing */
+    color: #555; /* Use a softer color for the text */
+  }
+  
+  .review .author {
+    font-weight: bold; /* Highlight the author's name */
+    font-size: 1.2em; /* Slightly larger text for emphasis */
+    margin-top: 10px; /* Space above the author's name */
+    color: #333; /* Darker color for better contrast */
+  }
+  
+  .review .rating {
+    margin-top: 5px; /* Space above the rating */
+    font-size: 1.2em; /* Larger font size for ratings */
+    color: #f4b400; /* Use a golden color for ratings */
+  }
+  
+  /* Add hover effect for better interactivity */
+  .review:hover {
+    transform: translateY(-5px); /* Slight hover animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  

@@ -1,0 +1,78 @@
+/* App.css */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* Make sure both body and html take up 100% height */
+  font-family: 'Roboto', sans-serif;
+  background-color: #fbfffb;
+  /* Light background color */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensure the app takes full height */
+}
+
+.header {
+  background: linear-gradient(135deg, #2E7D32, #00549a);
+  /* Gradient green and blue for header */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+.header .logo {
+  height: 50px;
+  margin-right: 20px;
+  /* Adjust margin for more space */
+}
+
+.header h1 {
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  background: url('../../public/images/back.jpg') no-repeat center center/cover;
+  color: #2c3e50;
+  /* Dark blue for "Inventory" */
+  font-size: 40px;
+  font-weight: 600;
+  margin: 20px 0;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+  background-color: #212121;
+  /* Dark footer */
+  color: white;
+  padding: 20px;
+  margin-top: auto;
+  /* Push footer to the bottom */
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+  color: #76c7c0;
+  /* Soft teal color for links */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
