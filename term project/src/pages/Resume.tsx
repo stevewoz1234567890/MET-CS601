@@ -7,10 +7,7 @@ const Resume: React.FC = () => {
       <header className="resume-header">
         <h1>My Resume</h1>
         <p>
-          Below is an overview of my education, experience, and skills. You can also{" "}
-          <a href="/path-to-resume.pdf" target="_blank" rel="noopener noreferrer">
-            download my resume as a PDF
-          </a>.
+          Below is an overview of my education, experience, and skills.
         </p>
       </header>
 

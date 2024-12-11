@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
 import "./css/global.css";
 import Home from "./pages/Home";
@@ -14,13 +14,32 @@ import WebWorkerDemo from "./pages/WebWorkerDemo";
 import GeolocationDemo from "./pages/GeolocationDemo";
 
 const App: React.FC = () => {
+  const bannerRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const adjustHeaderPosition = () => {
+      if (bannerRef.current && headerRef.current) {
+        const bannerHeight = bannerRef.current.offsetHeight;
+        headerRef.current.style.top = `${bannerHeight}px`; // Set header position based on banner height
+      }
+    };
+
+    adjustHeaderPosition(); // Initial adjustment
+    window.addEventListener("resize", adjustHeaderPosition); // Recalculate on window resize
+
+    return () => {
+      window.removeEventListener("resize", adjustHeaderPosition); // Cleanup event listener
+    };
+  }, []);
+
   return (
-    <div>
-      <div className="welcome-banner">
+    <div className="app">
+      <div className="welcome-banner" ref={bannerRef}>
         <h1>Welcome to My Portfolio</h1>
       </div>
-      
-      <header className="header">
+
+      <header className="header" ref={headerRef}>
         <nav className="navbar">
           <ul className="nav-list">
             <li>
@@ -38,7 +57,7 @@ const App: React.FC = () => {
                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
                 aria-label="Go to About Me Page"
               >
-                About Me
+                About
               </NavLink>
             </li>
             <li>
@@ -74,12 +93,13 @@ const App: React.FC = () => {
                 className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
                 aria-label="Go to My Simple Projects Page"
               >
-                My Simple Projects
+                Projects
               </NavLink>
             </li>
           </ul>
         </nav>
       </header>
+
       <main>
         <Routes>
           <Route path="/" element={<Home />} />

@@ -21,7 +21,7 @@
 .worker-tools {
   margin-bottom: 1rem;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
   justify-content: center;
   gap: 1rem;
 }
@@ -32,6 +32,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better focus */
 }
 
 .worker-tools button {
@@ -59,6 +60,9 @@
 .worker-results {
   margin-top: 2rem;
   text-align: left;
+  max-width: 600px; /* Limit the width for better readability */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .worker-results h2 {
@@ -76,25 +80,65 @@
   font-size: 0.9rem;
   color: #333;
   line-height: 1.5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .worker-demo-container h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Adjust heading size */
   }
 
   .worker-demo-container p {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .worker-tools {
+    gap: 0.8rem; /* Reduce gap between elements */
   }
 
   .worker-tools input {
-    width: 120px;
-    font-size: 0.9rem;
+    width: 120px; /* Smaller input width */
+    font-size: 0.9rem; /* Adjust font size */
   }
 
   .worker-tools button {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem; /* Smaller button font size */
+    padding: 0.4rem 0.8rem; /* Adjust padding */
+  }
+
+  .primes-output {
+    font-size: 0.85rem; /* Adjust output text size */
+  }
+}
+
+@media (max-width: 480px) {
+  .worker-demo-container h1 {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .worker-demo-container p {
+    font-size: 0.9rem; /* Adjust paragraph size */
+  }
+
+  .worker-tools {
+    flex-direction: column; /* Stack tools vertically */
+    gap: 0.5rem; /* Minimize gap */
+  }
+
+  .worker-tools input {
+    width: 100%; /* Full width for inputs */
+    font-size: 0.85rem; /* Smaller font size for inputs */
+  }
+
+  .worker-tools button {
+    width: 100%; /* Full width for buttons */
+    font-size: 0.85rem; /* Smaller button font size */
+    padding: 0.3rem 0.7rem; /* Adjust padding for compact layout */
+  }
+
+  .primes-output {
+    font-size: 0.8rem; /* Adjust output font size further */
+    max-height: 150px; /* Reduce height for smaller screens */
   }
 }

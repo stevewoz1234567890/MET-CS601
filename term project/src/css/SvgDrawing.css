@@ -22,6 +22,7 @@
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
   gap: 1rem;
 }
 
@@ -42,11 +43,16 @@
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center; /* Ensures button text stays centered */
 }
 
 .svg-tools button:hover {
   background-color: #0056b3;
   transform: scale(1.05);
+}
+
+.svg-tools button:active {
+  transform: scale(0.95); /* Active state effect for button */
 }
 
 .svg-tools button:disabled {
@@ -62,20 +68,65 @@
   border: 2px dashed #ccc;
   border-radius: 8px;
   background-color: #f9f9f9;
+  margin: 0 auto; /* Center canvas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better focus */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .svg-drawing-container h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* Reduce heading size on medium screens */
   }
 
   .svg-drawing-container p {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .svg-tools {
+    gap: 0.8rem; /* Reduce gap between tools */
   }
 
   .svg-tools button {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 0.4rem 0.8rem; /* Reduce button padding */
+  }
+
+  .svg-tools input {
+    width: 40px; /* Reduce input size */
+    height: 25px;
+  }
+
+  .svg-canvas {
+    max-width: 400px; /* Smaller canvas on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .svg-drawing-container h1 {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .svg-drawing-container p {
+    font-size: 0.9rem; /* Adjust paragraph size for small screens */
+  }
+
+  .svg-tools {
+    flex-direction: column; /* Stack tools vertically */
+    gap: 0.5rem; /* Reduce gap further */
+  }
+
+  .svg-tools button {
+    font-size: 0.85rem; /* Smaller font size for buttons */
+    padding: 0.3rem 0.7rem; /* Reduce padding further */
+    width: 100%; /* Full-width buttons for narrow screens */
+  }
+
+  .svg-tools input {
+    width: 35px; /* Further reduce input size */
+    height: 22px;
+  }
+
+  .svg-canvas {
+    max-width: 300px; /* Smaller canvas for narrow screens */
   }
 }

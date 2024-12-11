@@ -97,7 +97,7 @@ CSS: For responsive grid layout, hover effects, and styling project cards.
 React Router: For seamless navigation within the application.
 
 ### Resume
-The Resume page provides a detailed overview of the developer's education, work experience, and skills. It is structured into sections, each highlighting key achievements and qualifications. The page includes a link to download the resume as a PDF.
+The Resume page provides a detailed overview of the developer's education, work experience, and skills. It is structured into sections, each highlighting key achievements and qualifications.
 
 React: To structure and display resume sections dynamically.
 TypeScript: For type-safe handling of resume data and properties.

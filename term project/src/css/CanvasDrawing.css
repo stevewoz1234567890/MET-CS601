@@ -1,57 +1,126 @@
 .canvas-container {
-    text-align: center;
-    padding: 2rem;
-  }
-  
+  text-align: center;
+  padding: 2rem;
+}
+
+.canvas-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.canvas-container p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Canvas Tools */
+.canvas-tools {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+.canvas-tools button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.canvas-tools button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slight hover effect for better UX */
+}
+
+.canvas-tools button:active {
+  transform: scale(0.98); /* Pressed state effect */
+}
+
+/* Color Picker */
+.color-picker {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-picker:hover {
+  transform: scale(1.1); /* Slight hover effect for color picker */
+}
+
+/* Drawing Canvas */
+.drawing-canvas {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  background: repeating-linear-gradient(
+    45deg,
+    #f9f9f9,
+    #f9f9f9 10px,
+    #e6e6e6 10px,
+    #e6e6e6 20px
+  );
+  width: 100%; /* Ensures it adjusts to container size */
+  max-width: 800px; /* Maximum width for larger screens */
+  height: 400px; /* Fixed height for consistent appearance */
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visual hierarchy */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .canvas-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #007bff;
+    font-size: 2rem; /* Reduce heading size on medium screens */
   }
-  
+
   .canvas-container p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #555;
+    font-size: 1rem; /* Adjust paragraph size */
   }
-  
+
   .canvas-tools {
-    margin-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+    gap: 0.8rem; /* Reduce gap between tools */
   }
-  
+
   .canvas-tools button {
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+    padding: 0.4rem 0.8rem; /* Smaller buttons on medium screens */
+    font-size: 0.9rem; /* Adjust font size */
   }
-  
-  .canvas-tools button:hover {
-    background-color: #0056b3;
-  }
-  
-  .color-picker {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+
   .drawing-canvas {
-    border: 2px dashed #ccc;
-    border-radius: 8px;
-    background: repeating-linear-gradient(
-      45deg,
-      #f9f9f9,
-      #f9f9f9 10px,
-      #e6e6e6 10px,
-      #e6e6e6 20px
-    );
+    height: 300px; /* Reduce height for smaller screens */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .canvas-container h1 {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .canvas-container p {
+    font-size: 0.9rem; /* Further adjust paragraph size */
+  }
+
+  .canvas-tools {
+    flex-direction: column; /* Stack tools vertically */
+    gap: 0.5rem; /* Minimize gap */
+  }
+
+  .canvas-tools button {
+    width: 100%; /* Full-width buttons for better usability */
+    padding: 0.3rem 0.7rem; /* Reduce padding for compact layout */
+    font-size: 0.85rem; /* Adjust font size further */
+    text-align: center; /* Ensure proper alignment */
+  }
+
+  .drawing-canvas {
+    height: 250px; /* Reduce canvas height further */
+  }
+}
